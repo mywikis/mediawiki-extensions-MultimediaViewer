@@ -136,7 +136,8 @@
 	 */
 	Image.prototype.imagePreloadingSupported = function () {
 		// This checks if the browser supports CORS requests in XHRs
-		return window.XMLHttpRequest !== undefined && 'withCredentials' in new XMLHttpRequest();
+		//return window.XMLHttpRequest !== undefined && 'withCredentials' in new XMLHttpRequest();
+		return false;
 	};
 
 	/**
